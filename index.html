@@ -1482,7 +1482,7 @@ document.getElementById("b-html2").onclick=()=>document.getElementById("b-export
 
 /* ---- Publication en ligne : envoie l'export HTML au service du professeur (Google Apps Script) ---- */
 /* Adresse de l'application web du professeur (…/exec). À renseigner une fois pour toute la classe. */
-const ADRESSE_PUBLICATION = "";
+const ADRESSE_PUBLICATION = "https://script.google.com/macros/s/AKfycby7-EHA_ft6nxfAGaKGxxE-NwN1rDZ6LaBn3FWatzPeAwkUKY7rYQukBn6qMXEqn6vX/exec";
 const MAX_PUBLICATION = 45*1024*1024;
 function lienPublie(){ return D.pub&&D.pub.id&&ADRESSE_PUBLICATION ? ADRESSE_PUBLICATION+"?p="+encodeURIComponent(D.pub.id) : ""; }
 function afficherPublication(){
